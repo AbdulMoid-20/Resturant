@@ -486,8 +486,12 @@ header .row{
     .popular-section .icon-bg{
         display: none;
     }
-
+    /* featured section */
+    .featured-section .grid{
+    grid-template-columns: 1fr ;
+    }
 }
+
 
 
 
