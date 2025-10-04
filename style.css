@@ -1,0 +1,495 @@
+/* -------------------------- colors -------------------------- */
+:root{
+    --primary:#FFB30E;
+    --secondary:#F17228;
+    --gradient: linear-gradient(90deg, #FFBA26 , #FF9A0E);
+    --background: #FFFFFF;
+    --grey:#9E9E9E;
+}
+/* -------------------------- reset default css -------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+/* -------------------------- font-sizes -------------------------- */
+
+html{
+    font-size: 16px;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.1rem;
+}
+h4{
+    font-size: 1rem;
+}
+p{
+    font-size: 1rem;
+}
+span{
+    font-size: 1rem;
+}
+
+/* -------------------------- Default Css -------------------------- */
+.width-80{
+    width: 80vw;
+    margin: auto;
+    /* overflow: hidden; */
+}
+
+.row{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+button{
+    border:none;
+    border-radius: 6px;
+    padding: 10px 25px;
+    transition: .5s;
+    cursor: pointer;
+}
+button:hover{
+    transform: translateY(-5px);
+}
+
+input{
+    border: none;
+}
+
+.primary-color{
+    color: var(--primary);
+}
+
+.primary-bgcolor{
+    background-color: var(--primary);
+}
+
+.background-white{
+    background-color: var(--background);
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.padding{
+    padding: 40px 0;
+}
+
+/* -------------------------- header start -------------------------- */
+header{
+    background-color: var(--background);
+}
+
+header .row{
+    padding: 10px 3px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-container{
+    width: 200px;
+}
+
+.header-btn{
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header-btn .search-box input{
+    padding: 10px 0;
+    width: 100px;
+    font-weight: 700;
+}
+
+.header-btn button{
+    padding: 10px 20px;
+    color: var(--primary);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--background);
+    box-shadow: 1px 5px 10px 1px ;
+}
+
+.header-btn button:hover{
+    background-color: var(--primary);
+    color: var(--background);
+    box-shadow: 1px 5px 10px 1px #f17228be;
+}
+/* -------------------------- header end -------------------------- */
+
+/* -------------------------- hero section start -------------------------- */
+.hero-section{
+    background: linear-gradient(151deg,rgba(237, 221, 83, 1) 50%, rgba(251, 188, 29, 1) 80%);
+    padding-top: 148.4px;
+    padding-bottom: 0;
+}
+
+.hero-section h1{
+    font-size: 4rem;
+    color:var(--background);
+}
+
+.hero-section p{
+    color: #504F4F;
+    margin: 10px;
+}
+
+.order-form{
+    width: 45vw;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.hero-section .image{
+    width: 500px;
+    height: 370px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.order-form .row{
+    gap: 20px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: none;
+    color: #504F4F;
+    background-color: var(--background);
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.active{
+    background-color: #F172281A;
+    color: var(--secondary);
+}
+
+.order-btn{
+    border-bottom: 1px solid #504f4f30 ;
+}
+
+.order-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 5px;
+}
+
+.order-details input{
+    position: relative;
+    width: 350px;
+    padding: 8px 30px;
+    background-color: #F5F5F5;
+    border-radius: 6px;
+}
+
+.order-details .fa-location-dot{
+    position: absolute;
+    top : 73.3%;
+    left: 12.1%;
+    z-index: 100;
+    color: #FF7474;
+}
+
+.order-details button{
+    color: var(--background);
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+    box-shadow: 1px 5px 10px 1px #f17228be;
+}
+
+.order-details button:hover{
+    color: var(--secondary);
+    background-color: var(--background);
+    box-shadow: 1px 12px 10px 1px #f17228be;
+
+}
+/* -------------------------- hero section end -------------------------- */
+
+/* -------------------------- Card grid start -------------------------- */
+.cards-grid {
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.discount {
+    position: relative;
+    left: 0;
+    bottom: 50.9px;
+    background: #ffb300;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 6px 18px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: inline-block;
+}
+
+.discount span {
+    font-size: 0.8rem;
+    display: block;
+    font-weight: normal;
+}
+
+.card .content {
+    margin-top: -50px;
+    padding: 15px;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+/* -------------------------- Card grid end -------------------------- */
+
+/* -------------------------- process section start -------------------------- */
+.process-section{
+    margin-top: 20px;
+    background: linear-gradient(180deg,rgba(255, 207, 103, 0.274) 0%, rgb(255, 255, 255) 100%);
+}
+.process-section .grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    margin-top: 40px;
+    gap: 20px;
+}
+.process-section .width-80 > h2{
+    text-align: center;
+    color: var(--secondary);
+}
+.step{
+    text-align: center;
+}
+
+.step p{
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--grey);
+}
+
+
+/* -------------------------- process section end -------------------------- */
+
+/* -------------------------- popular section start -------------------------- */
+.popular-section {
+    margin-top: 20px;
+}
+
+.popular-section .width-80 > h2{
+    text-align: center;
+}
+
+.popular-section .grid{
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.popular-section .icon-bg{
+    position: absolute;
+    color: var(--background);
+    background-color: #ffb20e;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 3px 0;
+}
+
+.popular-section .fa-angle-left{
+    left: 60px;
+    top: 1650px;
+}
+
+.popular-section .fa-angle-right{
+    right: 60px;
+    top: 1650px;
+}
+
+.item{
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.item img{
+    border-radius: 8px;
+    width: 100%;
+}
+
+.item{
+    text-align: center;
+}
+
+.item div h4{
+    margin-top: 5px;
+}
+
+.item div p {
+    margin: 5px 0;
+    color: var(--primary);
+    font-size: 0.8rem;
+}
+
+.item button{
+    margin: 10px;
+    width: 100%;
+    background-color: var(--secondary);
+    color: var(--background);
+    border: 2px solid var(--secondary);
+    font-size: 1rem;
+    box-shadow: 0px 5px 10px 0px #fd725c88;
+}
+
+.item button:hover{
+    background-color: var(--background);
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+    box-shadow: 0px 10px 10px 0px #fd725c88;
+}
+
+/* -------------------------- popular section end -------------------------- */
+
+/* -------------------------- featured section start -------------------------- */
+.featured-section {
+    margin-top: -30px;
+}
+
+.featured-section .width-80 > h2{
+    /* text-align: center; */
+}
+
+.featured-section .grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin-top: 40px;
+    gap: 10px;
+    /* background-color: var(--secondary); */
+}
+
+.resturant{
+    border-radius: 12px;
+    /* background-color: #F17228; */
+    padding: 15px;
+}
+
+.tags{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.tags p:first-child{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: var(--background);
+    background-color: var(--secondary);
+    padding: 5px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.tags p:last-child{
+    margin-top: 10px;
+    color: var(--background);
+    background-color: var(--primary);
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.resturant .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+}
+.resturant .content img{
+    grid-row:  span 2;
+}
+
+
+.resturant .resturant-banner{
+    border-radius: 8px;
+    width: 100%;
+} 
+/* -------------------------- featured section end -------------------------- */
+
+
+@media screen and (max-width:480px) {
+    .width-80{
+        width: 80vw;
+        margin: auto;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    
+    /* Card grid end */
+    .cards-grid {
+        grid-template-columns: auto ;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    /* process section */
+    .process-section .grid{
+        grid-template-columns: 1fr ;
+    }
+
+    /* popular section */
+    .popular-section .grid{
+    grid-template-columns: 1fr ;
+    }
+    .popular-section .icon-bg{
+        display: none;
+    }
+
+}
+
+
+
+
+   
