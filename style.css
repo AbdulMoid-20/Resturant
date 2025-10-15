@@ -901,7 +901,7 @@ footer .list ul li{
 /* -------------------------- mobile responsive -------------------------- */
 @media screen and (max-width:480px) {
     .width-80{
-        width: 80vw;
+        width: 90vw;
         margin: auto;
     }
 
@@ -1236,3 +1236,4 @@ footer .list ul li{
     }
 
 }
+
